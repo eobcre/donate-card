@@ -5,15 +5,17 @@ import Input from './components/Input';
 import DonateButton from './components/DonateButton';
 import Terms from './components/Terms';
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div>
-      <Title />
-      <SelectTab />
-      <Price />
-      <Input />
-      <DonateButton />
-      <Terms />
+    <div className='flex justify-center items-center bg-[#E4EFFF] h-screen'>
+      <div className='bg-white rounded-lg w-[340px] h-[420px]'>
+        <Title />
+        <SelectTab />
+        <Price />
+        <Input />
+        <DonateButton />
+        <Terms />
+      </div>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-const Title = () => {
+const Title: React.FC = () => {
   return (
     <div>
       <h1 className='flex justify-center items-center text-[#5A9CFF] text-xl font-bold'>

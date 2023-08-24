@@ -8,7 +8,7 @@ import Terms from './components/Terms';
 const App: React.FC = () => {
   return (
     <div className='flex justify-center items-center bg-[#E4EFFF] h-screen'>
-      <div className='bg-white rounded-lg w-[430px] h-[420px]'>
+      <div className='bg-white rounded-xl w-[430px] h-[460px]'>
         <Title />
         <SelectTab />
         <Price />

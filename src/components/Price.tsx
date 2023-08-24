@@ -2,10 +2,20 @@ import { priceData } from '../data/priceData';
 
 const Price: React.FC = () => {
   return (
-    <div>
+    <div className='flex justify-center items-center gap-2 my-6'>
       {priceData.map((data) => (
-        <input key={data.id} type='button' value={data.price} />
+        <input
+          key={data.id}
+          type='button'
+          value={`$${data.price}`}
+          className='border border-[#BAD1FF] rounded-md w-[50px] py-1'
+        />
       ))}
+      <input
+        type='button'
+        value='Custom'
+        className='border border-[#BAD1FF] rounded-md px-2 py-1'
+      />
     </div>
   );
 };

@@ -24,9 +24,4 @@ export const priceData = [
     price: 50,
     checked: false,
   },
-  {
-    id: 6,
-    price: 'Custom',
-    checked: false,
-  },
 ];

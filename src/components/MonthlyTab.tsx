@@ -2,7 +2,7 @@ import Price from './Price';
 import Input from './Input';
 import DonateButton from './DonateButton';
 
-const MonthlyTab = () => {
+const MonthlyTab: React.FC = () => {
   return (
     <div>
       <Price />

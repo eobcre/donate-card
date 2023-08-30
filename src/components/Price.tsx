@@ -3,16 +3,14 @@ import { useState } from 'react';
 import { priceData } from '../data/priceData';
 
 const Price: React.FC = () => {
-  const [selected, setSelected] = useState<number | null>(null);
-
-  const [selectedCustom, setSelectedCustom] = useState(false);
+  const [selected, setSelected] = useState<number | null>(0);
 
   const handleClickPrice = (index: number) => {
     setSelected(index);
   };
 
   const handleClickCustom = () => {
-    setSelectedCustom((prevState) => !prevState);
+    setSelected(null);
   };
 
   return (
@@ -33,7 +31,7 @@ const Price: React.FC = () => {
         value='Custom'
         onClick={handleClickCustom}
         className={`price-border w-[70px] ${
-          selectedCustom ? 'bg-[#BAD1FF]' : ''
+          selected === null ? 'bg-[#BAD1FF]' : ''
         }`}
       />
     </div>

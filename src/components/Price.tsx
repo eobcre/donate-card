@@ -5,8 +5,14 @@ import { priceData } from '../data/priceData';
 const Price: React.FC = () => {
   const [selected, setSelected] = useState<number | null>(null);
 
-  const handleClick = (index: number | null) => {
+  const [selectedCustom, setSelectedCustom] = useState(false);
+
+  const handleClickPrice = (index: number) => {
     setSelected(index);
+  };
+
+  const handleClickCustom = () => {
+    setSelectedCustom((prevState) => !prevState);
   };
 
   return (
@@ -16,8 +22,8 @@ const Price: React.FC = () => {
           key={data.id}
           type='button'
           value={`$${data.price}`}
-          onClick={() => handleClick(index)}
-          className={`border border-[#BAD1FF] text-sm rounded-md w-[50px] py-1 ${
+          onClick={() => handleClickPrice(index)}
+          className={`price-border w-[50px] ${
             selected === index ? 'bg-[#BAD1FF]' : ''
           }`}
         />
@@ -25,9 +31,9 @@ const Price: React.FC = () => {
       <input
         type='button'
         value='Custom'
-        onClick={() => handleClick(null)}
-        className={`border border-[#BAD1FF] text-sm rounded-md w-[70px] py-1 ${
-          selected === null ? 'bg-[#BAD1FF]' : ''
+        onClick={handleClickCustom}
+        className={`price-border w-[70px] ${
+          selectedCustom ? 'bg-[#BAD1FF]' : ''
         }`}
       />
     </div>

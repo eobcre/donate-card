@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .price-border {
+    @apply border border-[#BAD1FF] text-sm rounded-md py-1;
+  }
+}

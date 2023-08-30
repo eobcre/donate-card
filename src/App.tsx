@@ -1,9 +1,7 @@
 import Title from './components/Title';
 import SelectTab from './components/SelectTab';
-import Price from './components/Price';
-import Input from './components/Input';
-import DonateButton from './components/DonateButton';
 import Terms from './components/Terms';
+import MonthlyTab from './components/MonthlyTab';
 
 const App: React.FC = () => {
   return (
@@ -11,9 +9,7 @@ const App: React.FC = () => {
       <div className='bg-white rounded-xl w-[430px] h-[460px]'>
         <Title />
         <SelectTab />
-        <Price />
-        <Input />
-        <DonateButton />
+        <MonthlyTab />
         <Terms />
       </div>
     </div>

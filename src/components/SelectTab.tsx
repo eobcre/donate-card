@@ -1,12 +1,9 @@
-import { useState } from 'react';
+type TabProps = {
+  changeTab: 'Monthly' | 'One Time';
+  handleClick: (tab: 'Monthly' | 'One Time') => void;
+};
 
-const SelectTab = () => {
-  const [changeTab, setChangeTab] = useState('Monthly');
-
-  const handleClick = (tab: string) => {
-    setChangeTab(tab);
-  };
-
+const SelectTab: React.FC<TabProps> = ({ changeTab, handleClick }) => {
   return (
     <div className='flex justify-center items-center'>
       <div className='flex bg-[#5A9CFF] text-white text-sm rounded-md w-[280px] h-[48px]'>

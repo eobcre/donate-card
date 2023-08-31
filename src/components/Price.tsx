@@ -22,7 +22,7 @@ const Price: React.FC = () => {
           value={`$${data.price}`}
           onClick={() => handleClickPrice(index)}
           className={`price-border w-[50px] ${
-            selected === index ? 'bg-[#5A9CFF] text-white' : ''
+            selected === index ? 'bg-[#5A9CFF] text-[#BAD1FF]' : ''
           }`}
         />
       ))}
@@ -31,7 +31,7 @@ const Price: React.FC = () => {
         value='Custom'
         onClick={handleClickCustom}
         className={`price-border w-[70px] ${
-          selected === null ? 'bg-[#5A9CFF] text-white' : ''
+          selected === null ? 'bg-[#5A9CFF] text-[#BAD1FF]' : ''
         }`}
       />
     </div>

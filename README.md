@@ -15,6 +15,14 @@ This is the daily challenge I participate in on [WebDevDaily](https://www.webdev
 - npm v9.8.0
 - Node v18.15.0
 
+### Features
+
+_Tab Switching :_
+In the "One Time" section, you can now see a button that allows you to switch between "Monthly" and "One Time" donation options.
+
+_Donation Amount Selection :_
+When you select a donation amount, the app will provide visual feedback by changing both the background color and text color of the selected donation option.
+
 ## Desired<br><br>
 
 <img width="310" alt="Screen Shot 2023-08-23 at 9 08 46 PM" src="https://github.com/eobcre/donate-card/assets/88697509/996d6c77-ccb4-4e8a-bf12-cc9f4b585a83">

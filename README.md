@@ -18,7 +18,7 @@ This is the daily challenge I participate in on [WebDevDaily](https://www.webdev
 ### Features
 
 _Tab Switching :_
-In the "One Time" section, you can now see a button that allows you to switch between "Monthly" and "One Time" donation options.
+Two tab buttons that allows you to switch between "Monthly" and "One Time" donation options.
 
 _Donation Amount Selection :_
 When you select a donation amount, the app will provide visual feedback by changing both the background color and text color of the selected donation option.

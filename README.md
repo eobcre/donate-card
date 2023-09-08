@@ -2,7 +2,7 @@
 
 This is the daily challenge I participate in on [WebDevDaily](https://www.webdevdaily.io/).
 
-## Demo
+### Demo
 
 ### Tools
 

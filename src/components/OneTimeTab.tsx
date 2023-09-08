@@ -7,7 +7,7 @@ const OneTimeTab: React.FC = () => {
     <div>
       <Price />
       <Input />
-      <DonateButton />
+      <DonateButton name='Donate One Time' />
     </div>
   );
 };

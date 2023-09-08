@@ -7,7 +7,7 @@ const MonthlyTab: React.FC = () => {
     <div>
       <Price />
       <Input />
-      <DonateButton />
+      <DonateButton name='Donate Now' />
     </div>
   );
 };
